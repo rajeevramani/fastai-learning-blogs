@@ -28,6 +28,11 @@ This will show you two ways to deploy your model as an app. This follows the Fas
 
 ![]({{ site.baseurl }}/images/blog-images/export.png "export.pkl")
 
+6. Commit and push your code.
+
 ### Setting up binder
 
-1. make a copy of the repo 
+1. Goto my [Binder](https://mybinder.org/)
+2. Here is a screenshot of my Binder cofig.
+
+![]({{ site.baseurl }}/images/blog-images/binder.png "Binder setup")
