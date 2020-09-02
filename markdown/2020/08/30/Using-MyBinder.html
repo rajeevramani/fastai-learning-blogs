@@ -112,9 +112,10 @@ window.onload = wrap_img;
     <ul class="section-nav">
 <li class="toc-entry toc-h1"><a href="#using-mybinderorg">Using mybinder.org</a>
 <ul>
+<li class="toc-entry toc-h2"><a href="#assumption">Assumption</a></li>
 <li class="toc-entry toc-h2"><a href="#basic-setup">Basic setup</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#use-fastai-repo-as-a-starting-point">Use FastAI repo as a starting point</a></li>
+<li class="toc-entry toc-h3"><a href="#setting-up-binder">Setting up binder</a></li>
 </ul>
 </li>
 </ul>
@@ -122,13 +123,37 @@ window.onload = wrap_img;
 </ul><h1 id="using-mybinderorg">
 <a class="anchor" href="#using-mybinderorg" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using mybinder.org</h1>
 
-<p>This will show you two ways to deploy your model as an app. This follows the FastAI lesson 2 example. I faced a few problems when deploying my notebook with iPywidgets.</p>
+<p>This will show you two ways to deploy your model as an app. This follows the FastAI lesson 2 example. I faced a few problems when deploying my notebook with iPywidgets into binder. This had less to do with iPywidgets and more with the set of accompanying files that you need to have in your repo.</p>
+
+<h2 id="assumption">
+<a class="anchor" href="#assumption" aria-hidden="true"><span class="octicon octicon-link"></span></a>Assumption</h2>
+
+<ol>
+  <li>You know how to create a git repo and use from the command line on your computer. <a href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners">Here</a> is a neat tutorial on how to get started.</li>
+  <li>I am using <a href="https://console.paperspace.com/notebooks">Paperspace</a> for this example because it just works with FastAI lessons and notebooks.</li>
+  <li>You have created a separate notebook to test the image recognition code following the code provided here <a href="https://github.com/fastai/bear_voila">Bear_voila</a>.</li>
+</ol>
 
 <h2 id="basic-setup">
 <a class="anchor" href="#basic-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Basic setup</h2>
 
-<h3 id="use-fastai-repo-as-a-starting-point">
-<a class="anchor" href="#use-fastai-repo-as-a-starting-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use FastAI repo as a starting point</h3>
+<ol>
+  <li>You should have created a notebook fashioned after the FastAI lesson <a href="https://github.com/fastai/course-v4/blob/master/nbs/02_production.ipynb">notebook</a>.</li>
+  <li>This particular line <code class="highlighter-rouge">learn.export()</code> in the notebook will export your model as a <code class="highlighter-rouge">.pkl</code> file. The name of the file is <code class="highlighter-rouge">export.pkl</code>. This will be in the same directory where you created the notebook.</li>
+</ol>
+
+<p><img src="fastai-learning-blogs/images/blog-images/export.png" alt="" title="export.pkl"></p>
+
+<ol>
+  <li>Download the export.pkl file into your newly created gihub repo.</li>
+  <li>Add another file called <code class="highlighter-rouge">requirements.txt</code> from <a href="https://github.com/fastai/bear_voila">here</a> to your repo</li>
+  <li>In the end your repo should look like this</li>
+</ol>
+
+<p><img src="fastai-learning-blogs/images/blog-images/export.png" alt="" title="export.pkl"></p>
+
+<h3 id="setting-up-binder">
+<a class="anchor" href="#setting-up-binder" aria-hidden="true"><span class="octicon octicon-link"></span></a>Setting up binder</h3>
 
 <ol>
   <li>make a copy of the repo</li>
