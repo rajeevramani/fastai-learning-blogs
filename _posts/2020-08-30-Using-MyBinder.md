@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Using my binder.
-categories: [markdown]
+categories: [markdown,mybinder,fastai-lessons]
 title: Using binder to deploy your code in Jupyter as an app
 ---
 # Using mybinder.org
