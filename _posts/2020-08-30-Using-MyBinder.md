@@ -26,7 +26,7 @@ This will show you two ways to deploy your model as an app. This follows the Fas
 4. Add another file called `requirements.txt` from [here](https://github.com/fastai/bear_voila) to your repo
 5. In the end your repo should look like this
 
-![]({{ site.baseurl }}/images/blog-images/export.png "export.pkl")
+![]({{ site.baseurl }}/images/blog-images/githubrepo.png "Folder structure")
 
 6. Commit and push your code.
 
